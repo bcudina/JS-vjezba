@@ -1,0 +1,54 @@
+#okvir {
+    border: 1px solid black;
+    width: 60%;
+    height: 200px;
+    margin: auto;
+    background: lightsteelblue;
+}
+
+#radniDiv {
+    border: 1px solid black;
+    width: 59%;
+    height: 300px;
+    margin: auto;
+    background: rgb(228, 240, 174);
+    padding: 3px;
+    
+}
+
+.izbornici {
+    width: 30%;
+    height: 80px;
+    margin: 4px;
+    background: powderblue;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.glavninaslovi {
+    line-height: 1.6%;
+}
+
+#radniDivLjevo {
+    width: 49%;
+    height: 290px;
+    float: left;
+    border: 0px solid black;
+    margin: auto;
+}
+
+#radniDivDesno {
+    width: 49%;
+    height: 290px;
+    float: right;
+    border: 0px solid black;
+    margin: auto;
+
+}
+
+#izracunNaslov {
+    text-align: center;
+}

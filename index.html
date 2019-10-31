@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bozidar Cudina</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body id = "body">
+    <div id="wrapp">
+
+        <div id="naslov">
+            <h1 id="name">Božidar Ćudina</h1>
+            <hr>
+            
+
+            <!-----------------buttons----------------->
+            <button id="btnLogo" class = "buttons">promjeni naslov</button>
+            <button id="btnIme" class = "buttons">promjeni boju imena</button>
+            <button id="btnOkviri" class = "buttons">Promjeni boju okvira</button>
+            <button id="btnReset" class = "buttons">Resetiraj sve</button><br>
+
+            <div id = "okviriVeliki">
+
+                <!-----------------input----------------------->
+                <div id ="bojaPozadineDiv" class = "okviri">
+                        <p>Izaberite boju pozadine : </p><input type ="color" id ="bojaPozadine" >
+                        
+                    <button id="btnPromjeniBoju" class = "buttons">Promjeni</button>
+                </Div>
+
+                <!----------------input matematika------------->
+                <div id ="matematikaDiv" class = "okviri2">
+ 
+                    <div id = "matematikaPrviOkvirDiv">
+                        <input type ="number" id ="prviBroj" placeholder="Unesi prvi broj..."  onfocus="this.value=''" value = "" size = "10">
+
+                        <input type ="number" id ="drugiBroj" placeholder="Unesi drugi broj..." value = "">
+
+                        <div id= "ekran" maxlength="10"></div>
+                    </div>
+
+                    <div id = "matematikaDrugiOkvirDiv">
+
+                        <button id="btnZbroji" class = "buttonsOperMath"><b>+</b></button>
+
+                        <button id="btnOduzmi" class = "buttonsOperMath"><b>-</b></button>
+
+                        <button id="btnMnozenje" class = "buttonsOperMath"><b>*</b></button>
+
+                        <button id="btnDjeljenje" class = "buttonsOperMath"><b>/</b></button>
+
+
+                        <button id="btnMathReset" class = "buttons">Resetiraj</button>
+                        
+                    </div>
+
+            </div>
+            
+        </Div>
+            
+
+
+
+
+
+            <div id="omeni">
+                <h3>O meni</h3>
+                <p id = "oMeniParagraf">Moje ime je <b>Božidar Ćudina</b> i ja učim HTML, CSS i Java Script.</p>
+            </div>
+            <div id="info">
+                <h3><a href = "ud.html">Ugostiteljski Digitron</a></h3>
+                <p>Stranice su informativnog karaktera napravljene u  dobroj vjeri da se stekne iskustvo rada.</p>
+            </div>
+
+            
+            <canvas id = "can"></canvas>
+            <button id="btnCanvas" class = "buttons">promjeni boju pozadine na 2 sekunde</button>
+            <h4 id = "car"></h4>
+
+
+        </div>
+
+
+    
+            
+            
+
+
+        </div>
+        
+
+
+
+
+
+    </div>
+
+
+
+    <script src="main.js"></script>
+    <script src="canvas.js"></script>
+    <script src="matematika.js"></script>
+
+
+</body>
+</html>
