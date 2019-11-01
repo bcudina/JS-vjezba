@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ugositelski Digitron</title>
-    <link rel="stylesheet" type="text/css" href="ud.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ugositelski digitron</title>
+    <link rel="stylesheet" type="text/css" href="ud.css" />
+  </head>
+  <body>
     <div id="wrapp">
+      <div id="okvir">
+        <div id="inventura" class="izbornici">
+          <h2 id="" class="glavniNaslovi">INVENTURA</h2>
+        </div>
+        <div id="boce" class="izbornici">
+          <h2 id="" class="glavniNaslovi">BOCE</h2>
+        </div>
+        <div id="pdvObrnuti" class="izbornici">
+          <h2 id="" class="glavniNaslovi">PDV obrnuti</h2>
+        </div>
+        <div id="digitron" class="izbornici">
+          <h2 id="" class="glavniNaslovi">RAZNO</h2>
+        </div>
+        <div id="razno" class="izbornici">
+          <h2 id="" class="glavniNaslovi">RAZNO</h2>
+        </div>
+        <div id="help" class="izbornici">
+          <h2 id="" class="glavniNaslovi">HELP</h2>
+        </div>
+      </div>
 
-            <div id="okvir">
-                <div id="inventura" class = "izbornici">
-                    <h2 id = "" class = "glavniNaslovi">INVENTURA</h2>
-                </div>
-                <div id="boce" class = "izbornici">
-                        <h2 id = "" class = "glavniNaslovi">BOCE</h2>
-                </div>
-                <div id="pdvObrnuti" class = "izbornici">
-                        <h2 id = "" class = "glavniNaslovi">PDV obrnuti</h2>
-                </div>
-                <div id="digitron" class = "izbornici">
-                        <h2 id = "" class = "glavniNaslovi">RAZNO</h2>
-                </div>
-                <div id="razno" class = "izbornici">
-                        <h2 id = "" class = "glavniNaslovi">RAZNO</h2>
-                </div>
-                <div id="help" class = "izbornici">
-                        <h2 id = "" class = "glavniNaslovi">HELP</h2>
-                </div>
+      <div id="radniDiv">
+        <div id="radniDivLjevo">
+          <p>Unesite cijenu jednog dozera pića</p>
+          <input
+            type="number"
+            id="cijenaDozera"
+            placeholder="dozer..."
+            onfocus="this.value=''"
+            value=""
+            size="10"
+          />
 
+          <p>Unesite <b>početno</b> stanje artikla</p>
+          <input
+            type="number"
+            id="cijenaDozera"
+            placeholder="artikal - početno"
+            onfocus="this.value=''"
+            value=""
+            size="10"
+          />
 
-            </div>
+          <p>Unesite <b>završno</b> stanje artikla</p>
+          <input
+            type="number"
+            id="cijenaDozera"
+            placeholder="artikal - završno"
+            onfocus="this.value=''"
+            value=""
+            size="10"
+          />
 
-            <div id="radniDiv">
-                <div id="radniDivLjevo">
-                    <p>Unesite cijenu jednog dozera pića</p>
-                    <input type ="number" id ="cijenaDozera" placeholder="dozer..."  onfocus="this.value=''" value = "" size = "10">
+          <hr />
 
-                    <p>Unesite <b>početno</b> stanje artikla</p>
-                    <input type ="number" id ="cijenaDozera" placeholder="artikal - početno"  onfocus="this.value=''" value = "" size = "10">
-
-                    <p>Unesite <b>završno</b> stanje artikla</p>
-                    <input type ="number" id ="cijenaDozera" placeholder="artikal - završno"  onfocus="this.value=''" value = "" size = "10">
-
-                    <hr>
-
-                    <button id="btnUnesi" class = "buttons">izračunaj</button>
-                </div>
-                <div id="radniDivDesno">
-                    <h3 id = "izracunNaslov">IZRAČUN</h3>
-
-                </div>
-            </div>
-
-
-
-
-
-
-
+          <button id="btnUnesi" class="buttons">izračunaj</button>
+        </div>
+        <div id="radniDivDesno">
+          <h3 id="izracunNaslov">IZRAČUN</h3>
+        </div>
+      </div>
     </div>
-    
 
-
-        <script src="ud.js"></script>
-</body>
+    <script src="ud.js"></script>
+  </body>
 </html>
